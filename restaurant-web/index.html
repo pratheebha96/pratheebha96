@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINSHAN Restaurant Online Ordering</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #c93; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; }
+        .menu-item { margin-bottom: 10px; }
+        .order-btn { background-color: #c93; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .order-btn:disabled { background-color: #ccc; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MINSHAN Restaurant</h1>
+    </header>
+    <section>
+        <h2>Menu</h2>
+        <div class="menu-item">Pizza - $10</div>
+        <div class="menu-item">Pasta - $8</div>
+        <div class="menu-item">Salad - $5</div>
+        <button class="order-btn" id="onlineOrder">Order Online</button>
+        <button class="order-btn" id="phoneOrder" style="display:none;">Order by Phone</button>
+    </section>
+    <section>
+        <h2>Payment Methods</h2>
+        <ul>
+            <li>Credit/Debit Card</li>
+            <li>PayPal</li>
+            <li>Cash on Delivery</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
